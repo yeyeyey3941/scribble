@@ -18,21 +18,30 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: yeyeyey's Github Blog
+email: cjttkfkd3941@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  이곳에서 제가 진행한 프로젝트들과 개발 경험, 그리고 기술적 인사이트를 정리합니다.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+# twitter_username: 
+github_username:  yeyeyey3941
 
 # Build settings
 theme: minima
 plugins:
   - jekyll-feed
+
+# Custom navigation
+header_pages:
+  # - about.markdown
+  - projects.markdown
+
+# Social links
+social_links:
+  github: yeyeyey3941
+  # linkedin: your-linkedin-username
+  # twitter: your-twitter-username
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -42,7 +51,8 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - README.md
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
