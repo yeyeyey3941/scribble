@@ -87,7 +87,7 @@ ThirdMiddleware(
 
 ## 3-4. Request and Response Flow
 
-### 📥 Request Flow (outer → inner)
+### Request Flow (outer → inner)
 
 ```
 ASGI Server (Uvicorn)
@@ -103,7 +103,7 @@ FirstMiddleware → dispatch() → call_next()
 Router → endpoint execution
 ```
 
-### 📤 Response Flow (inner → outer)
+### Response Flow (inner → outer)
 
 ```
 Endpoint returns a Response
