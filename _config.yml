@@ -22,7 +22,7 @@ title: yeyeyey's Github Blog
 email: cjttkfkd3941@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   이곳에서 제가 진행한 프로젝트들과 개발 경험, 그리고 기술적 인사이트를 정리합니다.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/scribble" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: 
 github_username:  yeyeyey3941
