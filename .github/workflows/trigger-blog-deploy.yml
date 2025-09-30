@@ -1,0 +1,19 @@
+name: Trigger Blog Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  trigger:
+    # 트리거 작업은 한 번만 실행하면 되므로 ubuntu로 고정
+    # 크로스 플랫폼 테스트가 필요한 경우 별도 워크플로우로 분리 권장
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger blog repository dispatch
+        uses: peter-evans/repository-dispatch@v2
+        with:
+          token: ${{ secrets.BLOG_TRIGGER_TOKEN }}
+          repository: yeyeyey3941/yeyeyey3941.github.io
+          event-type: scribble-updated
